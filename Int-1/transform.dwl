@@ -1,19 +1,33 @@
-%dw 2.0
-output application/json
 
 /*
-Give blank values for keys ssn and dob
-for address field map it to zipcode by extracting zipcode
-remove id, phonenumber and region
+step: 1 Give blank/masked values for keys ssn and dob
+Step 2: for address field map it to zipcode by extracting zipcode
+Step 3: remove id, phonenumber and region
+
+My Output should look like below
+
+[
+  {
+    "SSN": "*****",
+    "dob": "*****",
+    "zipcode": "11235",
+    "jobTitleName": "Developer",
+    "firstName": "Romin",
+    "lastName": "Irani",
+    "preferredFullName": "Romin Irani",
+    "employeeCode": "E1"
+  },
+  {
+    "SSN": "*****",
+    "dob": "*****",
+    "zipcode": "24538-221",
+    "jobTitleName": "Developer",
+    "firstName": "Neil",
+    "lastName": "Armstrong",
+    "preferredFullName": "Neil Armstrong",
+    "employeeCode": "E2"
+  }
+]
 */
 ---
-payload map{
-
-test: $ mapObject ((value, key, index) ->
-if(((key as String) == "SSN") or ((key as String) == "dob"))
-((key): "*****")
-else if(key ~= "address")
-("zipcode": (value splitBy " ")[-1])
-else ((key): value)
-) filterObject ((value, key, index) -> !(["id", "phoneNumber", "region"] contains (key as String) ))
-}.test
+payload
