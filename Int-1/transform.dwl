@@ -1,4 +1,5 @@
-
+%dw 2.0
+output application/json
 /*
 step: 1 Give blank/masked values for keys ssn and dob
 Step 2: for address field map it to zipcode by extracting zipcode
