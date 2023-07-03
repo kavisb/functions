@@ -1,0 +1,22 @@
+[
+  {
+    "SSN": "*****",
+    "dob": "*****",
+    "zipcode": "32258",
+    "jobTitleName": "Developer",
+    "firstName": "Romin",
+    "lastName": "Irani",
+    "preferredFullName": "Romin Irani",
+    "employeeCode": "E1"
+  },
+  {
+    "SSN": "*****",
+    "dob": "*****",
+    "zipcode": "32256-2301",
+    "jobTitleName": "Developer",
+    "firstName": "Neil",
+    "lastName": "Irani",
+    "preferredFullName": "Neil Irani",
+    "employeeCode": "E2"
+  }
+]
