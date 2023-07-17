@@ -1,34 +1,29 @@
 %dw 2.0
 output application/json
 /*
-step: 1 Give blank/masked values for keys ssn and dob
-Step 2: for address field map it to zipcode by extracting zipcode
+Please create an XML output as shown below from Input
 
 
 My Output should look like below
 
-[
-  {
-    "SSN": "*****",
-    "dob": "*****",
-    "zipcode": "11235",
-    "jobTitleName": "Developer",
-    "firstName": "Romin",
-    "lastName": "Irani",
-    "preferredFullName": "Romin Irani",
-    "employeeCode": "E1"
-  },
-  {
-    "SSN": "*****",
-    "dob": "*****",
-    "zipcode": "24538-221",
-    "jobTitleName": "Developer",
-    "firstName": "Neil",
-    "lastName": "Armstrong",
-    "preferredFullName": "Neil Armstrong",
-    "employeeCode": "E2"
-  }
-]
+<root xmlns:h="http://www.w3.org/TR/html4/"
+xmlns:f="https://www.w3schools.com/furniture">
+
+<h:table>
+  <h:tr>
+    <h:td>Apples</h:td>
+    <h:td>Bananas</h:td>
+  </h:tr>
+</h:table>
+
+<f:table>
+  <f:name>African Coffee Table</f:name>
+  <f:width>80</f:width>
+  <f:length>120</f:length>
+</f:table>
+
+</root>
+
 */
 ---
 payload
