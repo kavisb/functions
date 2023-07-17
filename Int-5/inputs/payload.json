@@ -1,0 +1,15 @@
+{
+  "root": {
+    "table": {
+      "tr": {
+        "td": "Apples",
+        "td": "Bananas"
+      }
+    },
+    "table": {
+      "name": "African Coffee Table",
+      "width": "80",
+      "length": "120"
+    }
+  }
+}
