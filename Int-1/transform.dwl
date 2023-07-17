@@ -3,7 +3,7 @@ output application/json
 /*
 step: 1 Give blank/masked values for keys ssn and dob
 Step 2: for address field map it to zipcode by extracting zipcode
-Step 3: remove id, phonenumber and region
+
 
 My Output should look like below
 
